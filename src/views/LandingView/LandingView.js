@@ -30,28 +30,6 @@ export class LandingView extends React.Component<void, Props, void> {
 
   render () {
     return (
-      // <div className='container'>
-        // <div className='row'>
-        //   <div className='col-xs-2 col-xs-offset-5'>
-        //     <img className={classes.duck}
-        //       src={DuckImage}
-        //       alt='This is a duck, duck DUCKKKK, because Redux.' />
-        //   </div>
-        // </div>
-        // <h1>Welcome to the React Redux Starter Kit</h1>
-        // <h2>
-        //   My Counter:
-        //   {' '}
-        //   <span className={classes['counter--green']}>{this.props.counter}</span>
-        // </h2>
-        // <button className='btn btn-default' onClick={this.props.increment}>
-        //   Increment
-        // </button>
-        // {' '}
-        // <button className='btn btn-default' onClick={this.props.doubleAsync}>
-        //   Double (Async)
-        // </button>
-      // </div>
       <div>
         <Layout style={{background: 'url(http://imagizer.imageshack.us/a/img922/9340/GCN36q.jpg) top / cover'}}>
           <Header transparent title="ProjectTrack" style={{color: 'white'}}>
