@@ -15,7 +15,8 @@ import {Layout, Header, Content, Button, Menu, MenuItem, Card, CardTitle, CardTe
 type Props = {
   counter: number,
   doubleAsync: Function,
-  increment: Function
+  increment: Function,
+  goToDashboard: Function
 };
 
 // We avoid using the `@connect` decorator on the class definition so
@@ -25,8 +26,14 @@ export class LandingView extends React.Component<void, Props, void> {
   static propTypes = {
     counter: PropTypes.number.isRequired,
     doubleAsync: PropTypes.func.isRequired,
-    increment: PropTypes.func.isRequired
+    increment: PropTypes.func.isRequired,
+    goToDashboard: PropTypes.func.isRequired
   };
+
+  goToDashboard (e) {
+    console.log('hew')
+    alert('asdfasdf')
+  }
 
   render () {
     return (
@@ -36,7 +43,7 @@ export class LandingView extends React.Component<void, Props, void> {
             <div style={{position: 'relative'}}>
               <Button raised colored id="demo-menu-lower-left">Log in</Button>
               <Menu target="demo-menu-lower-left" align="right">
-                <MenuItem>Log in as CEO</MenuItem>
+                <MenuItem onClick={this.props.goToDashboard}>Log in as CEO</MenuItem>
                 <MenuItem>Log in as PM</MenuItem>
                 <MenuItem>Log in as assignee</MenuItem>
               </Menu>

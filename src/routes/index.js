@@ -11,12 +11,11 @@ import { Route, IndexRoute } from 'react-router'
 
 import LandingLayout from 'layouts/LandingLayout/LandingLayout'
 import LandingView from 'views/LandingView/LandingView'
+import DashboardView from 'views/DashboardView/DashboardView'
 
 export default (store) => (
-  // <Route path='/' component={CoreLayout}>
-  //   <IndexRoute component={HomeView} />
-  // </Route>
   <Route path='/' component={LandingLayout}>
     <IndexRoute component={LandingView} />
+    <Route path='dashboard' component={DashboardView}/>
   </Route>
 )
